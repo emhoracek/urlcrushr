@@ -51,7 +51,7 @@ def add():
     print("The long url was " + longer + 
             " and shorter url was " + shorter)
     return render_template("add.html",
-                           domain = app.config.DOMAIN,
+                           domain = app.config['DOMAIN'],
                            longer = longer,
                            shorter = shorter)
 

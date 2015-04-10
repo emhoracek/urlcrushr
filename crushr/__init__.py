@@ -11,7 +11,7 @@ app.config.update(dict(
     SECRET_KEY = 'development key',
     DOMAIN = "crushr.com" ))
 
-app.config.from_envvar('APP_SETTINGS', silent=False)
+#app.config.from_envvar('APP_SETTINGS', silent=False)
 
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
